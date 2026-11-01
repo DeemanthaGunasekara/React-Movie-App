@@ -42,7 +42,6 @@
   background-color: #f40612;
 }
 
-
 @media (max-width: 639px) {
   .home {
     padding: 1rem 0;
@@ -60,4 +59,18 @@
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+  padding: 2rem;
+}
+
+.error-message {
+  text-align: center;
+  color: #e50914;
+  font-size: 1.1rem;
+  padding: 1rem;
 }
