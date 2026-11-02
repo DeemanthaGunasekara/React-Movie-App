@@ -1,0 +1,22 @@
+services:
+  # Production service (served through Nginx on http://localhost:80 or 8080)
+  movie-app:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    container_name: react-movie-app
+    ports:
+      - "8080:80"
+    restart: always
+
+  # Development service (uncomment if you want to develop inside Docker with live reload)
+  # movie-app-dev:
+  #   build:
+  #     context: ./Frontend
+  #     dockerfile: Dockerfile.dev
+  #   container_name: react-movie-app-dev
+  #   ports:
+  #     - "5173:5173"
+  #   volumes:
+  #     - ./Frontend:/app
+  #     - /app/node_modules
