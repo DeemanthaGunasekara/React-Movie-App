@@ -17,8 +17,7 @@ function App() {
     </Routes>
    </main>
 
-    </MovieProvider>
-   
+    </MovieProvider>   
     
   );
 }
